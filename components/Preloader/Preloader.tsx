@@ -39,19 +39,19 @@ const Preloader = () => {
     <>
       <div
         id="loader"
-        className="fixed top-0 left-0 w-full h-full bg-primary-900 opacity-100"
+        className="fixed left-0 top-0 z-50 h-full w-full bg-primary-900 opacity-100"
       >
-        <div className="loader-content absolute top-1/2 left-1/2 w-[300px] h-[90px] overflow-hidden -translate-x-1/2 -translate-y-1/2">
-          <div className="strip-loader w-full absolute top-0 left-0">
-            <div className="strip relative h-[30px] bg-white w-0 "></div>
-            <div className="strip relative h-[30px] bg-white w-0"></div>
-            <div className="strip relative h-[30px] bg-white w-0"></div>
+        <div className="loader-content absolute left-1/2 top-1/2 h-[90px] w-[300px] -translate-x-1/2 -translate-y-1/2 overflow-hidden">
+          <div className="strip-loader absolute left-0 top-0 w-full">
+            <div className="strip relative h-[30px] w-0 bg-white "></div>
+            <div className="strip relative h-[30px] w-0 bg-white"></div>
+            <div className="strip relative h-[30px] w-0 bg-white"></div>
           </div>
         </div>
       </div>
       <div
         id="loader-after"
-        className="bg-black fixed top-0 -left-full w-full h-full opacity-1"
+        className="opacity-1 fixed -left-full top-0 z-50 h-full w-full bg-black"
       ></div>
     </>
   );

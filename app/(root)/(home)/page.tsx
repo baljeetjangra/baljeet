@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
-  return <main className="">Welcome to Portfolio</main>;
+  return <main className="mt-20">Welcome to Portfolio</main>;
 }
