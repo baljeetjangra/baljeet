@@ -1,12 +1,10 @@
 "use client";
-import gsap from "gsap";
 import { useTheme } from "next-themes";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { RxMoon, RxSun } from "react-icons/rx";
 
 const ThemeSwitcher = () => {
   const { setTheme, theme } = useTheme();
-  const iconRef = useRef(null);
 
   const handleClick = () => {
     // Toggle the theme
@@ -20,11 +18,13 @@ const ThemeSwitcher = () => {
   return (
     <>
       {theme === "dark" ? (
-        <RxSun ref={iconRef} className="cursor-pointer" onClick={handleClick} />
+        <RxSun
+          className="cursor-pointer hover:animate-spin"
+          onClick={handleClick}
+        />
       ) : (
         <RxMoon
-          ref={iconRef}
-          className="cursor-pointer"
+          className="cursor-pointer transition-all duration-300 ease-in-out repeat-infinite hover:animate-pulse "
           onClick={handleClick}
         />
       )}
