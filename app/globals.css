@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body * {
+  @apply transition-colors duration-1000;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -38,6 +42,7 @@
     --black: #1c1d25;
     --gray: #4c4f65;
     --light-gray: #b0b2c3;
+    --cloudy: #ebebeb;
   }
 
   .dark {

@@ -34,6 +34,7 @@ module.exports = {
         black: "var(--black)",
         gray: "var(--gray)",
         "light-gray": "var(--light-gray)",
+        cloudy: "var(--cloudy)",
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",

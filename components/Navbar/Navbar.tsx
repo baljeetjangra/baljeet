@@ -4,6 +4,7 @@ import LogoSvg from "./LogoSvg";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { map } from "lodash";
 import NavLink from "./NavLink";
+import MobileMenu from "./MobileMenu";
 
 const links = [
   {
@@ -19,13 +20,13 @@ const links = [
 const Navbar = () => {
   return (
     <nav className="fixed left-0 top-0 z-20 mt-4 w-full">
-      <div className="container flex items-center justify-between px-16">
+      <div className="flex items-center justify-between px-4 md:container md:px-16">
         <Link href={"/"}>
           <LogoSvg />
         </Link>
-        <div aria-label="Mobile Menu" className="nav-toggle md:hidden">
-          hamburger icon
-        </div>
+
+        <MobileMenu />
+
         <ul className="hidden items-center gap-20 md:flex">
           {map(links, (link) => (
             <li key={link.title} className="">

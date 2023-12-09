@@ -20,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={leagueSpartan.className}>
+      <body
+        className={`${leagueSpartan.className} bg-cloudy transition duration-500 dark:bg-black `}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
