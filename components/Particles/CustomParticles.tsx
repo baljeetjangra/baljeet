@@ -28,11 +28,6 @@ const CustomParticles = () => {
     });
   }, []);
 
-  const particlesInit: any = useCallback(async (engine: Engine) => {
-    console.log(engine);
-    await loadSlim(engine);
-  }, []);
-
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
       console.log(container);
@@ -58,7 +53,7 @@ const CustomParticles = () => {
               onClick: { enable: true, mode: "push" },
               onHover: {
                 enable: true,
-                mode: "grab",
+                mode: "push",
                 parallax: { enable: false, force: 60, smooth: 10 },
               },
             },

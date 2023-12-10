@@ -5,17 +5,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 import { map } from "lodash";
 import NavLink from "./NavLink";
 import MobileMenu from "./MobileMenu";
-
-const links = [
-  {
-    title: "Projects",
-    href: "",
-  },
-  {
-    title: "Contact",
-    href: "",
-  },
-];
+import { links } from "@/constants";
 
 const Navbar = () => {
   return (

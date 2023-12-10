@@ -1,4 +1,5 @@
 import CustomParticles from "@/components/Particles/CustomParticles";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <div className="flex h-[100vh] w-[100vw] overflow-hidden">
         <div className="container flex flex-col  content-center items-center justify-end md:flex-row md:justify-around">
           <CustomParticles />
-          <div className="">
+          <div className="mb-4 md:mb-0">
             <h1
               className="text-4xl font-bold md:text-7xl lg:text-8xl"
               itemProp="name"
@@ -21,6 +22,11 @@ export default function Home() {
             >
               Front-end Developer
             </h3>
+            <div className="">
+              <Button className="z-10 rounded-none bg-primary  dark:text-white">
+                About Me
+              </Button>
+            </div>
           </div>
           <div className="z-10 self-end">
             <Image
