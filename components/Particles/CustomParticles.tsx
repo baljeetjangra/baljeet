@@ -81,7 +81,7 @@ const CustomParticles = () => {
               density: {
                 enable: true,
               },
-              value: 150,
+              value: 50,
             },
             opacity: {
               animation: {

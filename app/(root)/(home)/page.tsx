@@ -1,4 +1,6 @@
 import CustomParticles from "@/components/Particles/CustomParticles";
+import TextLoadingOverlay from "@/components/TextLoadingOverlay";
+import TextScramble from "@/components/TextScramble";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -10,22 +12,25 @@ export default function Home() {
         <div className="container flex flex-col  content-center items-center justify-end md:flex-row md:justify-around">
           <CustomParticles />
           <div className="mb-4 md:mb-0">
-            <h1
-              className="text-4xl font-bold md:text-7xl lg:text-8xl"
-              itemProp="name"
-            >
-              Baljeet Jangra
-            </h1>
-            <h3
-              itemProp="specialty"
-              className="py-4 italic sm:text-lg md:text-xl lg:text-2xl"
-            >
-              Front-end Developer
-            </h3>
-            <div className="">
-              <Button className="z-10 rounded-none bg-primary  dark:text-white">
-                About Me
-              </Button>
+            <TextLoadingOverlay>
+              <h1
+                className="text-4xl font-bold md:text-7xl lg:text-8xl"
+                itemProp="name"
+              >
+                Baljeet Jangra
+              </h1>
+            </TextLoadingOverlay>
+            <div>
+              <TextLoadingOverlay>
+                <TextScramble>Front-end Developer</TextScramble>
+              </TextLoadingOverlay>
+            </div>
+            <div>
+              <TextLoadingOverlay>
+                <Button className="z-10 rounded-none bg-primary  dark:text-white">
+                  About Me
+                </Button>
+              </TextLoadingOverlay>
             </div>
           </div>
           <div className="z-10 self-end">
