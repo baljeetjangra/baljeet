@@ -1,8 +1,10 @@
 import CustomParticles from "@/components/Particles/CustomParticles";
+import Path from "@/components/Svgs/Path";
 import TextLoadingOverlay from "@/components/TextLoadingOverlay";
 import TextScramble from "@/components/TextScramble";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import "./home.css";
 
 export default function Home() {
   return (
@@ -22,13 +24,17 @@ export default function Home() {
             </TextLoadingOverlay>
             <div>
               <TextLoadingOverlay>
-                <TextScramble>Front-end Developer</TextScramble>
+                <TextScramble>Frontend Developer</TextScramble>
               </TextLoadingOverlay>
             </div>
-            <div>
+            <div className="">
               <TextLoadingOverlay>
-                <Button className="z-10 rounded-none bg-primary  dark:text-white">
-                  About Me
+                <Button className="the-button group relative z-10 rounded-none bg-gradient-to-tr from-secondary to-secondary-900 px-6 font-bold tracking-wider dark:text-white">
+                  <span className="z-20">About Me</span>
+                  <div className="button-mask"></div>
+                  <div className="absolute -right-4 top-1 z-20 transition-transform group-hover:translate-x-[6px]">
+                    <Path />
+                  </div>
                 </Button>
               </TextLoadingOverlay>
             </div>

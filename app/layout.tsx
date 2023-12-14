@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 const leagueSpartan = League_Spartan({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title:  "Baljeet Jangra - Frontend Developer",
+  title: "Baljeet Jangra - Frontend Developer",
   description: "",
 };
 
@@ -20,9 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${leagueSpartan.className} bg-cloudy transition duration-500 dark:bg-black `}
-      >
+      <body className={`${leagueSpartan.className} bg-cloudy dark:bg-black `}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

@@ -1,6 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
-import React, { useRef } from "react";
+import React from "react";
 import { RxMoon, RxSun } from "react-icons/rx";
 
 const ThemeSwitcher = () => {

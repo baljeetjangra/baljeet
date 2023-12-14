@@ -13,7 +13,7 @@ const TextLoadingOverlay = ({ children }: { children: React.ReactNode }) => {
   }, []);
 
   return (
-    <div className="relative inline-block overflow-hidden pr-3 pt-3">
+    <div className="relative inline-block overflow-hidden pr-7 pt-3">
       <div className="text-loading-overlay absolute inset-0 top-3 bg-black dark:bg-white"></div>
       {children}
     </div>

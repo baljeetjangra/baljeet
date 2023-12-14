@@ -29,6 +29,7 @@ module.exports = {
         },
         secondary: {
           DEFAULT: "var(--secondary)",
+          900: "var(--secondary-900)",
           foreground: "hsl(var(--secondary-foreground))",
         },
         black: "var(--black)",

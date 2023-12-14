@@ -11,7 +11,7 @@ const TextScramble = ({ children }: { children: string }) => {
     });
     setTimeout(() => {
       text.start();
-      text.reveal(2000);
+      text.reveal(1000);
     }, 2000);
     return () => {};
   }, []);

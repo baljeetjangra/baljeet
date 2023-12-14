@@ -1,11 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import LogoSvg from "./LogoSvg";
+import LogoSvg from "../Svgs/LogoSvg";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { map } from "lodash";
 import NavLink from "./NavLink";
 import MobileMenu from "./MobileMenu";
 import { links } from "@/constants";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
@@ -17,14 +18,16 @@ const Navbar = () => {
 
         <MobileMenu />
 
-        <ul className="hidden items-center gap-20 md:flex">
+        <ul className="nav-links hidden items-center gap-20 md:flex">
           {map(links, (link) => (
             <li key={link.title} className="">
               <NavLink title={link.title} href={link.href} />
             </li>
           ))}
           <li>
-            <ThemeSwitcher />
+            <Link href="">
+              <ThemeSwitcher />
+            </Link>
           </li>
         </ul>
       </div>

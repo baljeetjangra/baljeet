@@ -5,6 +5,7 @@ const NavLink = ({ title, href }: { title: string; href: string }) => {
   return (
     <Link
       href={href}
+      data-scroll=""
       className="text-xl font-bold text-gray hover:text-black dark:text-light-gray dark:hover:text-white"
     >
       {title}
