@@ -10,6 +10,8 @@ import Linkedin from "@/components/Svgs/Linkdin";
 import Github from "@/components/Svgs/Github";
 import Instagram from "@/components/Svgs/Instagram";
 import CodePen from "@/components/Svgs/CodePen";
+import ProjectList from "@/components/Projects/ProjectList";
+import AnimatedButton from "@/components/AnimatedButton";
 
 export default function Home() {
   return (
@@ -34,13 +36,7 @@ export default function Home() {
             </div>
             <div className="">
               <TextLoadingOverlay>
-                <Button className="the-button group relative z-10 rounded-none bg-gradient-to-tr from-secondary to-secondary-900 px-6 font-bold tracking-wider dark:text-white">
-                  <span className="z-20">About Me</span>
-                  <div className="button-mask"></div>
-                  <div className="absolute -right-4 top-1 z-20 transition-transform group-hover:translate-x-[6px]">
-                    <Path />
-                  </div>
-                </Button>
+                <AnimatedButton title="About Me" />
               </TextLoadingOverlay>
             </div>
           </div>
@@ -67,7 +63,7 @@ export default function Home() {
           </li>
           <li>
             <a
-              href="https://twitter.com/baljeet_codes"
+              href="https://twitter.com/baljeetcodes"
               target="_blank"
               rel="noopener"
               aria-label="Twitter"
@@ -106,8 +102,15 @@ export default function Home() {
       </div>
 
       {/* Projects */}
-      <section id="projects" className="h-[90vh] bg-black dark:bg-cloudy">
-        <h1 className="text-2xl text-black">Projects</h1>
+      <section
+        id="projects"
+        className="bg-black text-cloudy dark:bg-cloudy dark:text-black"
+      >
+        <div className="container py-16">
+          <h2 className="text-center text-2xl ">Projects</h2>
+          <p className="mt-4 text-center text-5xl font-bold">Latest work</p>
+          <ProjectList />
+        </div>
       </section>
     </main>
   );

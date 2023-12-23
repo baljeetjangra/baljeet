@@ -10,7 +10,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="fixed left-0 top-0 z-20 mt-4 w-full">
+    <nav className="left-0 top-0 z-20 w-full  py-4">
       <div className="flex items-center justify-between px-4 md:container md:px-16">
         <Link href={"/"}>
           <LogoSvg />
@@ -25,9 +25,7 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <Link href="">
-              <ThemeSwitcher />
-            </Link>
+            <ThemeSwitcher />
           </li>
         </ul>
       </div>

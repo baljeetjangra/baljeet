@@ -16,6 +16,10 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "query-overflow": "url('/assets/images/query-overflow.png')",
+      },
+      
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
