@@ -12,6 +12,11 @@ import Instagram from "@/components/Svgs/Instagram";
 import CodePen from "@/components/Svgs/CodePen";
 import ProjectList from "@/components/Projects/ProjectList";
 import AnimatedButton from "@/components/AnimatedButton";
+import LogoSvg from "@/components/Svgs/LogoSvg";
+import NavLink from "@/components/Navbar/NavLink";
+import { links, socialLinks } from "@/constants";
+import { map } from "lodash";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -106,12 +111,34 @@ export default function Home() {
         id="projects"
         className="bg-black text-cloudy dark:bg-cloudy dark:text-black"
       >
-        <div className="container py-16">
+        <div className="p-6 md:container md:py-16">
           <h2 className="text-center text-2xl ">Projects</h2>
           <p className="mt-4 text-center text-5xl font-bold">Latest work</p>
           <ProjectList />
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="flex flex-col items-center justify-center py-16">
+        <LogoSvg size="70" />
+        <div className="my-4">
+          <ul className="nav-links mg:gap-12 flex flex-col items-center gap-4 md:flex-row lg:gap-20 ">
+            {map(socialLinks, (link) => (
+              <li key={link.title} className="">
+                <Link
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener"
+                  data-scroll=""
+                  className="text-xl font-bold text-gray hover:text-black dark:text-light-gray dark:hover:text-white"
+                >
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </footer>
     </main>
   );
 }

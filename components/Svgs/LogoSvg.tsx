@@ -1,11 +1,11 @@
 import React from "react";
 
-const LogoSvg = () => {
+const LogoSvg = ({ size = "40" }: { size?: string | number }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={40}
-      height={40}
+      width={size}
+      height={size}
       viewBox="0 0 114 138"
       fill="none"
       className={`fill-gray stroke-none transition-all ease-in-out hover:fill-current dark:fill-white hover:dark:fill-light-gray`}
