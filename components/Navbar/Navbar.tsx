@@ -36,7 +36,7 @@ const Navbar = () => {
         }`}
       >
         <Link href={"/"}>
-          <LogoSvg />
+          <LogoSvg size={50} />
         </Link>
 
         <MobileMenu />
