@@ -3,10 +3,10 @@ export const links = [
     title: "Projects",
     href: "#projects",
   },
-  {
-    title: "Contact",
-    href: "",
-  },
+  // {
+  //   title: "Contact",
+  //   href: "",
+  // },
 ];
 
 export const socialLinks = [
@@ -38,6 +38,6 @@ export const projectsList: IProject[] = [
     title: "Query Overflow",
     description: "Unlocking Knowledge: Your Overflow for Expert Solutions",
     projectUrl: "https://query-overflow.vercel.app/",
-    backgroundImg: "bg-query-overflow",
+    backgroundImg: "/assets/images/query-overflow.png",
   },
 ];

@@ -10,9 +10,12 @@ const ProjectCard = ({
   return (
     <li className="mb-20">
       <a
+        style={{
+          backgroundImage: `url(${backgroundImg})`,
+        }}
         href={projectUrl}
         target="_blank"
-        className={`before:z-2 before:content-[' '] bg- bg-[ group relative mx-auto block  h-[200px] w-full overflow-hidden ${backgroundImg} bg-cover shadow-xl transition-all duration-300 ease-in before:absolute before:left-0 before:top-0 before:block before:h-full before:w-full before:bg-black before:opacity-60 md:h-[480px] lg:w-2/3`}
+        className={`before:z-2 before:content-[' '] group relative mx-auto block h-[200px] w-full overflow-hidden  bg-cover shadow-xl transition-all duration-300 ease-in before:absolute before:left-0 before:top-0 before:block before:h-full before:w-full before:bg-black before:opacity-60 md:h-[480px] lg:w-2/3`}
       >
         {/* Hover Mask */}
         <div className="after:content-[' '] absolute -left-full top-0 z-0 h-full w-full overflow-hidden bg-gradient-to-tr from-primary to-primary-900 transition-all duration-200 after:absolute after:left-0 after:top-0 after:h-full after:w-full group-hover:left-0 "></div>

@@ -1,8 +1,6 @@
 import CustomParticles from "@/components/Particles/CustomParticles";
-import Path from "@/components/Svgs/Path";
 import TextLoadingOverlay from "@/components/TextLoadingOverlay";
 import TextScramble from "@/components/TextScramble";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import "./home.css";
 import Twitter from "@/components/Svgs/Twitter";
@@ -13,10 +11,17 @@ import CodePen from "@/components/Svgs/CodePen";
 import ProjectList from "@/components/Projects/ProjectList";
 import AnimatedButton from "@/components/AnimatedButton";
 import LogoSvg from "@/components/Svgs/LogoSvg";
-import NavLink from "@/components/Navbar/NavLink";
-import { links, socialLinks } from "@/constants";
+import { socialLinks } from "@/constants";
 import { map } from "lodash";
 import Link from "next/link";
+import ReactJs from "@/components/Svgs/ReactJs";
+import NextJs from "@/components/Svgs/NextJs";
+import Typescript from "@/components/Svgs/Typescript";
+import NodeJs from "@/components/Svgs/NodeJs";
+import Tailwind from "@/components/Svgs/Tailwind";
+import MongoDb from "@/components/Svgs/MongoDb";
+import Docker from "@/components/Svgs/Docker";
+import Git from "@/components/Svgs/Git";
 
 export default function Home() {
   return (
@@ -106,11 +111,51 @@ export default function Home() {
         </ul>
       </div>
 
-      {/* Projects */}
+      {/* About Me */}
       <section
-        id="projects"
+        id="about"
         className="bg-black text-cloudy dark:bg-cloudy dark:text-black"
       >
+        <div className="p-6 md:container md:py-16">
+          <h2 className="text-center text-5xl font-bold">About Me</h2>
+          <div className="">
+            <div className="my-12">
+              <p className="mb-4 text-xl leading-relaxed">
+                I am a passionate Experience Engineer based in Gurugram, India,
+                with a keen interest in crafting seamless and user-centric
+                digital experiences. My journey in the tech world has been
+                marked by a commitment to continuous learning and a hands-on
+                approach to web development.
+              </p>
+              <p className="text-xl leading-relaxed">
+                I bring a creative and analytical mindset to every project, with
+                a focus on delivering high-quality solutions that meet user
+                needs. As I pursue my Master of Computer Applications, I am
+                excited about the ever-evolving landscape of technology and the
+                opportunities it presents for innovation and growth. Connect
+                with me to explore the possibilities at the intersection of code
+                and creativity.
+              </p>
+            </div>
+            <div className="mb-12">
+              <h3 className="mb-4 text-center text-4xl font-bold">Skills</h3>
+              <div className="flex flex-wrap items-center justify-center gap-12 p-4">
+                <ReactJs />
+                <NextJs />
+                <Typescript />
+                <NodeJs />
+                <Tailwind />
+                <MongoDb />
+                <Docker />
+                <Git />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects" className="">
         <div className="p-6 md:container md:py-16">
           <h2 className="text-center text-2xl ">Projects</h2>
           <p className="mt-4 text-center text-5xl font-bold">Latest work</p>
@@ -119,7 +164,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="flex flex-col items-center justify-center py-16">
+      <footer className="flex flex-col items-center justify-center py-16   ">
         <LogoSvg size="70" />
         <div className="my-4">
           <ul className="nav-links mg:gap-12 flex flex-col items-center gap-4 md:flex-row lg:gap-20 ">

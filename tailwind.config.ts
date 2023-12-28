@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "query-overflow": "url('/assets/images/query-overflow.png')",
+      
       },
       
       colors: {
