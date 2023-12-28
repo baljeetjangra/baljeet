@@ -88,3 +88,37 @@ body * {
     @apply bg-background text-foreground;
   }
 }
+
+/* Scrollbar */
+
+/* For WebKit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2779a7;
+  border-radius: 6px;
+}
+
+/* For Firefox */
+/* You can use scrollbar-color property in Firefox */
+* {
+  scrollbar-color: #2779a7 #ebebeb;
+}
+
+/* For Internet Explorer and Edge */
+/* These browsers use the -ms- prefix */
+* {
+  scrollbar-face-color: #2779a7;
+  scrollbar-shadow-color: #ebebeb;
+  scrollbar-highlight-color: #ebebeb;
+  scrollbar-3dlight-color: #ebebeb;
+  scrollbar-darkshadow-color: #2779a7;
+  scrollbar-track-color: #ebebeb;
+  scrollbar-arrow-color: #2779a7;
+}

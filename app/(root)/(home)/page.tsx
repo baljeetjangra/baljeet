@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="">
               <TextLoadingOverlay>
-                <AnimatedButton title="About Me" />
+                <AnimatedButton title="About Me" href="about" />
               </TextLoadingOverlay>
             </div>
           </div>
@@ -116,11 +116,11 @@ export default function Home() {
         id="about"
         className="bg-black text-cloudy dark:bg-cloudy dark:text-black"
       >
-        <div className="p-6 md:container md:py-16">
+        <div className="p-6 md:container md:py-28">
           <h2 className="text-center text-5xl font-bold">About Me</h2>
           <div className="">
             <div className="my-12">
-              <p className="mb-4 text-xl leading-relaxed">
+              <p className="mb-8 text-xl leading-relaxed">
                 I am a passionate Experience Engineer based in Gurugram, India,
                 with a keen interest in crafting seamless and user-centric
                 digital experiences. My journey in the tech world has been
@@ -137,7 +137,7 @@ export default function Home() {
                 and creativity.
               </p>
             </div>
-            <div className="mb-12">
+            <div className="">
               <h3 className="mb-4 text-center text-4xl font-bold">Skills</h3>
               <div className="flex flex-wrap items-center justify-center gap-12 p-4">
                 <ReactJs />
@@ -164,8 +164,9 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="flex flex-col items-center justify-center py-16   ">
+      <footer className="flex flex-col items-center justify-center py-16 ">
         <LogoSvg size="70" />
+
         <div className="my-4">
           <ul className="nav-links mg:gap-12 flex flex-col items-center gap-4 md:flex-row lg:gap-20 ">
             {map(socialLinks, (link) => (
