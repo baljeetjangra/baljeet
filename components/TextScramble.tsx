@@ -19,7 +19,7 @@ const TextScramble = ({ children }: { children: string }) => {
   return (
     <h3
       itemProp="specialty"
-      className="main-subtitle my-4 italic sm:text-lg md:text-xl lg:text-2xl"
+      className="main-subtitle mb-4 italic sm:text-lg md:text-xl lg:text-2xl"
     >
       {children}
     </h3>

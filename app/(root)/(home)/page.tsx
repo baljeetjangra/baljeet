@@ -33,7 +33,7 @@ export default function Home() {
           <div className="mb-4 md:mb-0">
             <TextLoadingOverlay>
               <h1
-                className="text-4xl font-bold md:text-7xl lg:text-8xl"
+                className="mb-4 text-4xl font-bold md:text-7xl lg:text-8xl"
                 itemProp="name"
               >
                 Baljeet Jangra
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         {/* Social Media */}
         <ul className="absolute right-5 top-1/2 hidden -translate-y-1/2 space-y-5 md:block ">
-          <li>
+          {/* <li>
             <a
               href="https://instagram.com/baljeetcodes"
               target="_blank"
@@ -70,10 +70,10 @@ export default function Home() {
             >
               <Instagram />
             </a>
-          </li>
+          </li> */}
           <li>
             <a
-              href="https://twitter.com/baljeetcodes"
+              href="https://twitter.com/baljeetjangraa"
               target="_blank"
               rel="noopener"
               aria-label="Twitter"
